@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import SearchTrains from './pages/SearchTrains';
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/search" element={<SearchTrains />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
